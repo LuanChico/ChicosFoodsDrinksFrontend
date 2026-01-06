@@ -23,7 +23,7 @@ export function LoginForm() {
     <Card className="bg-app-card border border-app-border w-full max-w-md mx-auto">
       <CardHeader>
         <CardTitle className="text-white text-center text-3xl sm:text-4xl font-bold">
-          Sujeito<span className="text-brand-primary">Pizza</span>
+          Chico's<span className="text-brand-primary">Food & Drinks</span>
         </CardTitle>
       </CardHeader>
       <CardContent>
