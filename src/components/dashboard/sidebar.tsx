@@ -37,7 +37,7 @@ export function Sidebar({ userName }: SidebarProps) {
       {/*  HEADER */}
       <div className="border-b border-app-border p-6">
         <h2 className="text-xl font-bold text-white">
-          Chico's<span className="text-brand-primary">Food & Drinks</span>          
+          Chico's <span className="text-brand-primary">Food & Drinks</span>          
         </h2>
         <p className="text-sm text-gray-300 mt-1">Olá, {userName}</p>
       </div>
