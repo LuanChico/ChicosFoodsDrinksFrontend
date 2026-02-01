@@ -49,13 +49,13 @@ export default async function Products() {
               key={product.id}
               className="bg-app-card border-app-border transition-shadow hover:shadow-md text-white overflow-hidden"
             >
-              <div className="relative w-full h-48">
+              <div className="relative w-full h-48 overflow-hidden bg-white">
                 <Image
                   src={product.banner}
                   alt={product.name}
                   fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  className="object-contain"
+                  sizes="100vw"
                 />
               </div>
               <CardHeader>

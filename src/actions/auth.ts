@@ -55,18 +55,18 @@ export async function loginAction(
 
     await setToken(response.token);
 
-    return { success: true, error: "", redirectTo: "/dashboard" };
+    return {
+      success: true,
+      error: "",
+      redirectTo: "/dashboard"
+    };
   } catch (error) {
-    console.log(error);
+    const message = error instanceof Error ? error.message : "Erro ao fazer o login";
 
-    if (error instanceof Error) {
-      return {
-        success: false,
-        error: error.message || "Erro ao fazer o login",
-      };
-    }
-
-    return { success: false, error: "Erro ao fazer o login" };
+    return {
+      success: false,
+      error: message
+    };
   }
 }
 

@@ -224,12 +224,12 @@ export function ProductForm({ categories }: ProductFormProps) {
               Imagem do produto
             </Label>
             {imagePreview ? (
-              <div className="relative w-full h-48 border rounded-lg overflow-hidden">
+              <div className="relative w-full h-48 border rounded-lg overflow-hidden bg-white">
                 <Image
                   src={imagePreview}
                   alt="preview da imagem"
                   fill
-                  className="object-cover z-10"
+                  className="object-contain"
                 />
 
                 <Button
@@ -241,6 +241,7 @@ export function ProductForm({ categories }: ProductFormProps) {
                   Excluir
                 </Button>
               </div>
+
             ) : (
               <div className="border-2 border-dashed rounded-md p-8 flex flex-col items-center justify-center">
                 <Upload className="h-8 w-8 mx-auto text-gray-400 mb-2" />
